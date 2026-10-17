@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Vishwak Putta | Supply Chain Portfolio">
+<meta property="og:description" content="M.S. Supply Chain Management, University of Houston. Procurement & Strategic Sourcing, Planning, Supply Chain Analytics.">
+<meta property="og:image" content="img/cfha-team.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1F33'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23fff' text-anchor='middle'%3EVP%3C/text%3E%3C/svg%3E">
+<style>[hidden]{display:none!important}</style>
+<title>Vishwak Putta Portfolio</title>
+<meta name="description" content="Vishwak Putta, M.S. Supply Chain Management, University of Houston. The story of how a marketing student became a supply chain professional, with the work and numbers from each chapter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: a story told in chapters along one line; a simple progress bar under the nav shows where the reader is. */
+:root{
+  --navy:#0B1F33; --navy-2:#102B46; --blue:#2563EB; --teal:#0F8B8D;
+  --bg:#F7F9FC; --surface:#FFFFFF; --ink:#13243A; --muted:#52606D; --line:#D9E2EC; --soft:#EAF0F7;
+  --on-navy:#E6EEF7; --on-navy-muted:#9FB3C8; --accent-ink:#1D4FD7;
+  --good-bg:#E3F3F3; --live-bg:#E8EFFD; --warn:#B45309;
+  --serif:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --sans:"Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --max:1120px; --rail:56px; --nav:60px; --trk:52px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#08131F; --surface:#0F1E30; --ink:#E4ECF5; --muted:#9AAABB; --line:#22364D; --soft:#13263B;
+  --blue:#5B8CFF; --teal:#2BB3B5; --accent-ink:#8AB0FF; --good-bg:#0F2A2E; --live-bg:#14223D; --warn:#F0A04B; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#08131F; --surface:#0F1E30; --ink:#E4ECF5; --muted:#9AAABB; --line:#22364D; --soft:#13263B;
+  --blue:#5B8CFF; --teal:#2BB3B5; --accent-ink:#8AB0FF; --good-bg:#0F2A2E; --live-bg:#14223D; --warn:#F0A04B; color-scheme:dark }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + var(--trk) + 12px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--navy)}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.04em}
+.label{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--navy);color:var(--on-navy);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:var(--nav)}
+.brand{font-weight:800;text-decoration:none;letter-spacing:-.01em}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:.92rem}
+.nav-links a{text-decoration:none;color:var(--on-navy-muted)}
+.nav-links a:hover{color:#fff}
+.theme{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center}
+.theme:hover{border-color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:11px 18px;font-weight:700;font-size:.95rem;text-decoration:none;border:1px solid transparent;transition:transform .2s, background .2s, border-color .2s;cursor:pointer}
+.btn-primary{background:#2563EB;color:#fff}
+.btn-primary:hover{transform:translateY(-1px);background:#1D4FD7}
+.btn-ghost{border-color:rgba(255,255,255,.28);color:#fff;background:transparent}
+.btn-ghost:hover{border-color:#fff}
+.btn-line{border-color:var(--line);color:var(--ink);background:var(--surface)}
+.btn-line:hover{border-color:var(--blue)}
+.nav .btn{padding:8px 14px;font-size:.85rem}
+
+/* tracker */
+.tracker{overflow-x:clip;position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--nav));z-index:45;background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tracker .wrap{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) auto;gap:20px;align-items:center;min-height:var(--trk)}
+.trk-status{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.trk-status b{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--teal);text-transform:uppercase}
+.trk-status span{font-size:.86rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lane-trk{position:relative;height:22px}
+.lane-trk .base,.lane-trk .fill{position:absolute;left:0;top:10px;height:2px;border-radius:2px}
+.lane-trk .base{right:0;background:var(--line)}
+.lane-trk .fill{width:var(--p,0%);background:linear-gradient(90deg,var(--teal),var(--blue))}
+.lane-trk a{position:absolute;top:6px;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--surface);border:2px solid var(--line);padding:0}
+.lane-trk a.done{border-color:var(--teal);background:var(--teal)}
+.lane-trk a span{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:.6rem;color:var(--muted);white-space:nowrap;opacity:0;visibility:hidden;transition:opacity .2s;pointer-events:none}
+.lane-trk a:last-of-type span{left:auto;right:-4px;transform:none}
+.lane-trk a:hover span,.lane-trk a:focus-visible span{opacity:1;visibility:visible}
+.ship{position:absolute;top:-3px;left:var(--p,0%);transform:translateX(-50%);width:30px;height:20px;color:var(--blue);transition:left .2s linear}
+.trk-miles{font-family:var(--mono);font-size:.76rem;color:var(--muted);text-align:right;white-space:nowrap}
+.trk-miles b{display:block;color:var(--ink);font-size:.9rem;font-variant-numeric:tabular-nums}
+
+/* hero */
+.hero{background:radial-gradient(900px 420px at 85% 0%,rgba(37,99,235,.28),transparent 60%),linear-gradient(160deg,#0B1F33 0%,#102B46 100%);color:var(--on-navy);padding-block:64px 56px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+.hero .label{color:#7FD3D4}
+.hero h1{font-family:var(--sans);font-weight:800;font-size:clamp(2.6rem,6vw,4.6rem);letter-spacing:-.04em;line-height:1;color:#fff;margin-top:14px}
+.hook{font-family:var(--serif);font-size:clamp(1.6rem,3.2vw,2.35rem);line-height:1.2;color:#fff;margin-top:22px;max-width:22ch}
+.hook em{color:#8FB4FF}
+.hero .sub{margin-top:20px;color:var(--on-navy-muted);max-width:52ch}
+.hero .sub strong{color:var(--on-navy);font-weight:600}
+
+.gate{margin-top:30px;border-top:1px dashed rgba(255,255,255,.2);padding-top:22px}
+.gate .label{color:var(--on-navy-muted)}
+.gate h2{font-family:var(--serif);font-weight:400;font-size:1.7rem;color:#fff;margin-top:6px}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.path{text-align:left;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:14px;color:#fff;cursor:pointer;transition:border-color .2s, background .2s}
+.path:hover{border-color:rgba(255,255,255,.5)}
+.path[aria-pressed="true"]{background:rgba(43,179,181,.14);border-color:#2BB3B5}
+.path small{display:block;font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:#7FD3D4}
+.path b{display:block;font-size:1rem;margin-top:4px}
+.path span{display:block;font-size:.8rem;color:var(--on-navy-muted);margin-top:4px;line-height:1.4}
+
+.ticket{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px 22px 18px;font-family:var(--mono);font-size:.8rem}
+.ticket-head{display:flex;justify-content:space-between;gap:12px;color:var(--on-navy-muted);padding-bottom:14px;border-bottom:1px dashed rgba(255,255,255,.18);margin-bottom:6px;letter-spacing:.06em;text-transform:uppercase;font-size:.7rem}
+.ticket ol{list-style:none;margin:0;padding:0}
+.ticket li{display:grid;grid-template-columns:84px 14px 1fr;gap:10px;padding:9px 0;align-items:start}
+.ticket time{color:var(--on-navy-muted)}
+.ticket .dot{width:9px;height:9px;border-radius:50%;border:2px solid #7FD3D4;margin-top:5px;position:relative}
+.ticket li:not(:last-child) .dot::after{content:"";position:absolute;left:50%;top:9px;width:1px;height:32px;background:rgba(127,211,212,.35);transform:translateX(-50%)}
+.ticket .ev{color:#fff;font-family:var(--sans);font-size:.92rem;line-height:1.35}
+.ticket .ev span{display:block;color:var(--on-navy-muted);font-family:var(--mono);font-size:.72rem;margin-top:2px}
+.ticket li.now .dot{background:#2BB3B5;border-color:#2BB3B5;animation:ping 2.2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(43,179,181,.55)}80%,100%{box-shadow:0 0 0 10px rgba(43,179,181,0)}}
+
+/* short version */
+.short{background:var(--surface);border-bottom:1px solid var(--line)}
+.short .wrap{display:grid;grid-template-columns:auto repeat(4,1fr);align-items:stretch}
+.short .intro{padding:22px 28px 22px 0;color:var(--muted);font-size:.85rem;display:flex;align-items:center;max-width:180px}
+.stat{padding:22px;border-left:1px solid var(--line);text-decoration:none;display:block}
+.stat b{display:block;font-size:1.7rem;font-weight:800;letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{display:block;color:var(--muted);font-size:.85rem;margin-top:4px}
+.stat:hover b{color:var(--blue)}
+
+/* mode banner */
+.mode-note{display:none;background:var(--live-bg);color:var(--ink);font-size:.9rem}
+.mode-note .wrap{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;padding-block:12px}
+.mode-note button{background:none;border:0;color:var(--accent-ink);font-weight:700;cursor:pointer;padding:0;font-size:.9rem}
+body[data-path="express"] .mode-note{display:block}
+body[data-path="express"] .deep{display:none!important}
+body:not([data-path="scenic"]) .scenic-only{display:none}
+
+/* route */
+.route{position:relative;padding-block:40px 20px}
+.route .wrap{position:relative}
+.rail{position:absolute;top:0;bottom:0;left:calc(max(16px,env(safe-area-inset-left,0px)) + 11px);width:2px;background:var(--line)}
+.rail i{position:absolute;inset:0 0 auto 0;height:var(--p,0%);background:linear-gradient(var(--teal),var(--blue))}
+.stop{position:relative;padding-left:var(--rail);padding-block:56px}
+.stop + .stop{border-top:1px solid var(--line)}
+.pin{position:absolute;left:4px;top:62px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--blue)}
+.stop.alt .pin{border-color:var(--teal)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;color:var(--muted)}
+.meta .ch{color:var(--accent-ink);font-weight:600}
+.scan{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-top:8px}
+.status{font-family:var(--sans);font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--good-bg);color:var(--teal)}
+.status.live{background:var(--live-bg);color:var(--accent-ink)}
+.stop h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4.2vw,3.1rem);line-height:1.08;letter-spacing:-.01em;margin-top:10px;max-width:20ch}
+.stop h2 em{color:var(--accent-ink)}
+.body{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;margin-top:26px;align-items:start}
+.story{display:grid;gap:16px;max-width:62ch}
+.story strong{font-weight:700}
+.project-name{font-weight:700;font-size:.95rem;color:var(--muted)}
+.project-name b{color:var(--ink)}
+.quiet{color:var(--muted);font-size:.92rem}
+
+.receipt{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;font-family:var(--mono)}
+.receipt .label{color:var(--muted);display:flex;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:.82rem;color:var(--muted)}
+.row:last-of-type{border-bottom:0}
+.row b{font-family:var(--sans);font-size:1.12rem;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:-.01em}
+.row b.up{color:var(--teal)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.tag{font-family:var(--mono);font-size:.7rem;padding:5px 9px;border-radius:6px;background:var(--soft);color:var(--ink)}
+.cta-link{display:inline-flex;gap:6px;font-weight:700;font-size:.9rem;color:var(--accent-ink);text-decoration:none}
+.cta-link:hover{text-decoration:underline}
+
+.lanes{margin-top:16px;display:grid;gap:10px}
+.lane{display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:center;font-size:.72rem;color:var(--muted)}
+.lane .dots{display:flex;gap:6px}
+.lane .dots s{width:22px;height:8px;border-radius:4px;background:var(--line);text-decoration:none}
+.lane.after .dots s{background:var(--teal)}
+.util{margin-top:6px;height:8px;border-radius:4px;background:var(--soft);overflow:hidden}
+.util i{display:block;height:100%;width:86.4%;background:var(--blue)}
+
+.roi{margin-top:14px}
+.roi svg{width:100%;height:auto;display:block}
+.roi text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+
+figure{margin:0}
+.photo{border-radius:14px;overflow:hidden;background:var(--soft)}
+.photo img{width:100%;height:100%;object-fit:cover}
+figcaption{font-size:.82rem;color:var(--muted);margin-top:10px}
+.wide-photo{aspect-ratio:16/10}
+.cfha-pics{display:grid;grid-template-columns:16fr 9fr;gap:12px;align-items:start}
+.cfha-pics figcaption{margin-top:0}
+
+.pull{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1.3;color:var(--ink);border-left:3px solid var(--teal);padding-left:18px}
+
+.courses{display:grid;border-top:1px solid var(--line)}
+.course{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.course b{font-weight:700}
+.course span{color:var(--muted);font-family:var(--mono);font-size:.78rem;white-space:nowrap}
+.toolkit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tool{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.tool b{display:block;font-size:.88rem;margin-bottom:4px}
+.tool span{font-size:.82rem;color:var(--muted);line-height:1.5;display:block}
+
+.trips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:28px}
+.trip .photo{aspect-ratio:4/5}
+.trip h3{font-size:1.1rem;margin-top:14px}
+.trip p{color:var(--muted);font-size:.95rem;margin-top:6px}
+
+/* BOM */
+.block{padding-block:64px}
+.block + .block{border-top:1px solid var(--line)}
+.block h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4vw,2.8rem);margin-top:10px;line-height:1.1}
+.block .lede{color:var(--muted);margin-top:12px;max-width:60ch}
+.bom-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.bom{width:100%;border-collapse:collapse;font-size:.9rem;min-width:620px}
+.bom th{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:left;font-weight:500;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--soft)}
+.bom td{padding:12px 16px;border-bottom:1px dashed var(--line);vertical-align:top}
+.bom tr:last-child td{border-bottom:0}
+.bom td:first-child{font-family:var(--mono);font-size:.76rem;color:var(--muted);white-space:nowrap}
+.bom td b{font-weight:700}
+.bom td small{display:block;color:var(--muted);font-size:.8rem}
+.bom .lvl{font-family:var(--mono);font-size:.76rem;text-align:center;font-variant-numeric:tabular-nums}
+.bom a{color:var(--accent-ink);font-weight:600;text-decoration:none;white-space:nowrap;margin-right:8px}
+.bom a:hover{text-decoration:underline}
+.bom .sub td{background:var(--soft);font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);padding:8px 16px}
+
+.docs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
+.doc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px;text-decoration:none;display:flex;flex-direction:column;transition:border-color .2s, transform .2s}
+.doc:hover{border-color:var(--blue);transform:translateY(-2px)}
+.doc img{aspect-ratio:4/3;object-fit:cover;object-position:top;border-radius:8px;background:#fff;width:100%}
+.doc div{padding:12px 6px 6px}
+.doc b{display:block;font-size:.92rem;line-height:1.3}
+.doc span{display:block;font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-top:6px}
+.doc em{font-style:normal;display:block;margin-top:10px;font-size:.82rem;font-weight:700;color:var(--accent-ink)}
+.note{margin-top:16px;color:var(--muted);font-size:.9rem}
+
+/* game */
+.game{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:36px;margin-top:28px;align-items:start}
+.rules{display:grid;gap:12px;color:var(--ink)}
+.rules .receipt{margin-top:6px}
+.console{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.day{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.day b{font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.qty{font-size:2.6rem;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1}
+.qty small{font-size:.9rem;font-weight:500;color:var(--muted);letter-spacing:0;margin-left:6px}
+input[type=range]{width:100%;margin:16px 0 6px;accent-color:var(--blue)}
+.scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.68rem;color:var(--muted)}
+.g-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.log{margin-top:18px;border-top:1px solid var(--line)}
+.log table{width:100%;border-collapse:collapse;font-size:.82rem;font-variant-numeric:tabular-nums}
+.log th{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:right;padding:10px 6px}
+.log th:first-child,.log td:first-child{text-align:left}
+.log td{padding:8px 6px;text-align:right;border-top:1px dashed var(--line)}
+.log tfoot td{font-weight:800;border-top:1px solid var(--line)}
+.neg{color:var(--warn)}
+.verdict{margin-top:16px;padding:14px 16px;border-radius:12px;background:var(--live-bg);font-size:.92rem}
+.verdict b{font-weight:800}
+
+/* epilogue */
+.epi{background:linear-gradient(160deg,#0B1F33,#102B46);color:var(--on-navy);padding-block:80px}
+.epi .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:center}
+.epi .label{color:#7FD3D4}
+.epi h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.05;color:#fff;margin-top:12px}
+.epi p{color:var(--on-navy-muted);margin-top:18px;max-width:56ch}
+.epi p strong{color:#fff;font-weight:600}
+.likes{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.likes span{font-size:.82rem;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.2);color:var(--on-navy)}
+.contact{margin-top:30px;display:grid;gap:12px}
+.email{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.email code{font-family:var(--mono);font-size:.95rem;color:#fff;background:rgba(255,255,255,.06);padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.12);user-select:all;word-break:break-all}
+.coffee{aspect-ratio:3/4;border-radius:18px;overflow:hidden;position:relative}
+.coffee img{width:100%;height:100%;object-fit:cover}
+.coffee figcaption{position:absolute;inset:auto 0 0;margin:0;padding:48px 18px 16px;background:linear-gradient(transparent,rgba(8,19,31,.88));color:#fff;font-size:.88rem}
+footer{background:var(--navy);color:var(--on-navy-muted);font-size:.8rem;padding-block:22px;border-top:1px solid rgba(255,255,255,.08)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 18px}
+footer span{margin-right:auto}
+footer a{text-decoration:none;color:var(--on-navy)}
+
+@media (max-width:960px){
+  .hero .wrap,.epi .wrap{grid-template-columns:1fr;gap:40px}
+  .body,.game{grid-template-columns:1fr;gap:28px}
+  .short .wrap{grid-template-columns:repeat(2,1fr)}
+  .short .intro{grid-column:1/-1;max-width:none;padding:18px 0 4px}
+  .stat{border-left:0;border-top:1px solid var(--line);padding:16px 14px 16px 0}
+  .stat:nth-of-type(even){padding-left:16px;border-left:1px solid var(--line)}
+  .docs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nav-links a:not(.btn){display:none}
+  .coffee{aspect-ratio:4/3;max-width:520px}
+  .tracker .wrap{grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;padding-block:8px}
+  .lane-trk{grid-column:1/-1;order:3}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  :root{--rail:38px}
+  .hero{padding-block:44px 44px}
+  .paths{grid-template-columns:1fr}
+  .stop{padding-block:44px}
+  .pin{top:50px}
+  .trips,.toolkit,.docs{grid-template-columns:1fr}
+  .ticket li{grid-template-columns:70px 14px 1fr}
+  .actions .btn{flex:1;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* sourcing-event additions */
+.tracker .wrap{grid-template-columns:auto minmax(0,1fr)}
+.trk-status{min-width:150px}
+.stages{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.stages a{display:block;text-decoration:none;padding-top:9px;position:relative;font-size:.74rem;font-weight:600;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stages a::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;border-radius:2px;background:var(--line);transition:background .25s}
+.stages a.done::before{background:var(--teal)}
+.stages a.on{color:var(--ink)}
+.stages a.on::before{background:var(--blue)}
+.stages a i{font-style:normal;font-family:var(--mono);font-size:.64rem;color:var(--muted);margin-right:4px}
+.trk-score{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-align:right;white-space:nowrap}
+.trk-score b{display:block;font-family:var(--sans);font-size:.95rem;color:var(--ink)}
+
+.rfp{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden}
+.rfp-head{display:flex;justify-content:space-between;gap:12px;padding:16px 22px;background:rgba(255,255,255,.05);border-bottom:1px dashed rgba(255,255,255,.18);font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--on-navy-muted)}
+.rfp-head b{color:#7FD3D4;font-weight:600}
+.kv{display:grid;grid-template-columns:118px minmax(0,1fr);gap:8px 14px;padding:18px 22px;font-size:.88rem;border-bottom:1px dashed rgba(255,255,255,.18)}
+.kv dt{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-navy-muted);padding-top:3px}
+.kv dd{margin:0;color:#fff}
+.rfp .ticket{border:0;border-radius:0;background:transparent}
+
+.matrix-wrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.matrix{width:100%;border-collapse:collapse;font-size:.9rem;min-width:640px}
+.matrix th{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:left;font-weight:500;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--soft)}
+.matrix td{padding:12px 16px;border-bottom:1px dashed var(--line);vertical-align:top}
+.matrix tr:last-child td{border-bottom:0}
+.matrix td:first-child{font-family:var(--mono);font-size:.74rem;color:var(--muted);white-space:nowrap}
+.matrix td b{font-weight:700}
+.matrix td small{display:block;color:var(--muted);font-size:.8rem}
+.matrix .ev{font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.matrix a{color:var(--accent-ink);font-weight:600;text-decoration:none;white-space:nowrap;margin-right:8px}
+.matrix a:hover{text-decoration:underline}
+.matrix .sub td{background:var(--soft);font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);padding:8px 16px}
+.ok{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--good-bg);color:var(--teal);white-space:nowrap}
+
+.score{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;margin-top:28px;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.presets{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{font-size:.82rem;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.chip:hover{border-color:var(--blue)}
+.chip[aria-pressed="true"]{background:var(--live-bg);border-color:var(--blue);color:var(--accent-ink)}
+.crit{display:grid;grid-template-columns:minmax(0,1fr) 34px;gap:2px 12px;align-items:center;padding:10px 0;border-top:1px dashed var(--line)}
+.crit label{font-weight:700;font-size:.92rem}
+.crit small{grid-column:1/-1;color:var(--muted);font-size:.78rem;margin-top:-2px}
+.crit output{font-family:var(--mono);font-size:.85rem;text-align:right;font-variant-numeric:tabular-nums}
+.crit input{grid-column:1/-1;width:100%;accent-color:var(--blue);margin:4px 0 0}
+.fit{display:flex;align-items:baseline;gap:10px}
+.fit b{font-size:2.8rem;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.fit span{color:var(--muted);font-size:.9rem}
+.bars{display:grid;gap:10px;margin-top:18px}
+.bar{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr) 44px;gap:10px;align-items:center;font-size:.82rem}
+.bar .tr{height:8px;border-radius:4px;background:var(--soft);overflow:hidden}
+.bar .tr i{display:block;height:100%;width:0;background:var(--blue);transition:width .3s}
+.bar span:last-child{font-family:var(--mono);text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.readfirst{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+.readfirst ol{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+.readfirst li a{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:baseline;text-decoration:none;padding:10px 12px;border-radius:10px;background:var(--soft)}
+.readfirst li a:hover{outline:1px solid var(--blue)}
+.readfirst li i{font-style:normal;font-family:var(--mono);font-size:.75rem;color:var(--accent-ink)}
+.readfirst li b{font-weight:700;font-size:.92rem}
+.readfirst li span{font-family:var(--mono);font-size:.72rem;color:var(--muted)}
+
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.quote{text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;cursor:pointer;color:var(--ink);transition:border-color .2s, transform .2s}
+.quote:hover{border-color:var(--blue);transform:translateY(-2px)}
+.quote[disabled]{cursor:default;transform:none}
+.quote.best{border-color:var(--teal);box-shadow:0 0 0 2px var(--good-bg)}
+.quote.picked{border-color:var(--blue)}
+.quote h3{font-size:1rem}
+.quote dl{display:grid;grid-template-columns:1fr auto;gap:4px 10px;margin:10px 0 0;font-size:.82rem}
+.quote dt{color:var(--muted)}
+.quote dd{margin:0;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.quote .tco{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-family:var(--mono);font-size:.76rem;color:var(--muted)}
+.quote .tco b{font-family:var(--sans);font-size:1rem;color:var(--ink)}
+.scenario{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;align-items:baseline}
+.rule{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px;padding:14px 16px;border-radius:12px;background:var(--soft)}
+.rule div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:.9rem}
+.rule div b{font-variant-numeric:tabular-nums}
+.rule p{grid-column:1/-1;font-family:var(--mono);font-size:.76rem;color:var(--muted);margin:0}
+@media (max-width:560px){.rule{grid-template-columns:1fr}}
+.scenario b{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+@media (max-width:960px){
+  .score{grid-template-columns:1fr}
+  .stages a{font-size:0}
+  .stages a i{font-size:.64rem}
+  .tracker .wrap{grid-template-columns:minmax(0,1fr) auto}
+  .stages{grid-column:1/-1;order:3}
+}
+@media (max-width:560px){
+  .quotes{grid-template-columns:1fr}
+  .kv{grid-template-columns:96px minmax(0,1fr)}
+  .bar{grid-template-columns:minmax(0,110px) minmax(0,1fr) 40px}
+}
+
+.helper{background:var(--surface);border-bottom:1px solid var(--line)}
+.helper .wrap{padding-block:28px;display:grid;gap:16px}
+.helper h2{font-family:var(--serif);font-weight:400;font-size:1.7rem}
+.roles{display:flex;flex-wrap:wrap;gap:8px}
+.picks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.picks a{display:grid;gap:4px;text-decoration:none;padding:14px 16px;border-radius:12px;background:var(--soft);height:100%}
+.picks a:hover{outline:1px solid var(--blue)}
+.picks i{font-style:normal;font-family:var(--mono);font-size:.72rem;color:var(--accent-ink)}
+.picks b{font-size:.98rem}
+.picks span{font-size:.85rem;color:var(--muted);line-height:1.45}
+.cando{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:26px}
+.can{display:grid;gap:8px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s, transform .2s}
+.can:hover{border-color:var(--blue);transform:translateY(-2px)}
+.can b{font-size:1.1rem}
+.can p{color:var(--muted);font-size:.95rem}
+.can span{font-weight:700;font-size:.88rem;color:var(--accent-ink)}
+@media (max-width:760px){.picks,.cando{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Primary">
+  <div class="wrap">
+    <a class="brand" href="#top">Vishwak Putta</a>
+    <div class="nav-links">
+      <a href="#ch1">Story</a>
+      <a href="#ch3">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#game">Play</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch light or dark mode" title="Light / dark">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-primary" href="#next">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="tracker" aria-label="Evaluation progress">
+  <div class="wrap">
+    <div class="trk-status" aria-live="polite"><b id="trkCode">01 of 05</b><span id="trkTitle">Intro</span></div>
+    <ol class="stages" id="stages">
+      <li><a href="#top" data-s="1"><i>01</i>Intro</a></li>
+      <li><a href="#ch1" data-s="2"><i>02</i>How it started</a></li>
+      <li><a href="#ch3" data-s="3"><i>03</i>What I’ve done</a></li>
+      <li><a href="#skills" data-s="4"><i>04</i>What I can do</a></li>
+      <li><a href="#next" data-s="5"><i>05</i>Let’s talk</a></li>
+    </ol>
+    
+  </div>
+</div>
+
+<header class="hero" id="top" data-stage="1">
+  <div class="wrap">
+    <div>
+      <div class="label">University of Houston · C.T. Bauer College of Business · M.S. Supply Chain Management</div>
+      <h1>Hi, I’m Vishwak.</h1>
+      <p class="hook">I got into supply chain the year the shelves went empty. <em>I stayed because I like fixing what breaks.</em></p>
+      <p class="sub">I’m finishing my M.S. in Supply Chain Management and looking for my first full-time role in <strong>Procurement &amp; Strategic Sourcing</strong>, with Planning and Supply Chain Analytics close behind. This page is the story of how a marketing student from Hyderabad ended up here, and the projects, research and teaching I’ve done along the way.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#ch1">Read my story</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/vishwak-putta" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+      </div>
+
+    </div>
+    <aside class="rfp" aria-label="At a glance">
+      <div class="rfp-head"><span>At a glance</span><b>Open to full-time roles</b></div>
+      <dl class="kv">
+        <dt>Career focus</dt><dd>Procurement &amp; Strategic Sourcing</dd>
+        <dt>Also covers</dt><dd>Planning · Supply Chain Analytics</dd>
+        <dt>Based in</dt><dd>Houston, TX</dd>
+        <dt>Available</dt><dd>January 2027 · full-time</dd>
+      </dl>
+      <div class="ticket">
+        <div class="ticket-head"><span>My journey</span><span>So far</span></div>
+        <ol>
+          <li><time>2020</time><i class="dot"></i><div class="ev">Hyderabad, India<span>COVID shortages spark the question</span></div></li>
+          <li><time>May 2024</time><i class="dot"></i><div class="ev">Woxsen University<span>BBA done · switched to supply chain</span></div></li>
+          <li><time>Jan 2025</time><i class="dot"></i><div class="ev">Houston, TX<span>M.S. SCM at UH Bauer</span></div></li>
+          <li><time>Aug 2025</time><i class="dot"></i><div class="ev">Instructional Assistant<span>UH Bauer · 350+ students supported</span></div></li>
+          <li><time>Jun 2026</time><i class="dot"></i><div class="ev">Value-Based Healthcare Analyst<span>UH Humana Institute · $9.6M savings model</span></div></li>
+          <li><time>2026</time><i class="dot"></i><div class="ev">St. Louis, MO<span>Presented research poster · CFHA 2026</span></div></li>
+          <li class="now"><time>Jan 2027</time><i class="dot"></i><div class="ev">Next: your team<span>Available full-time after Dec 2026</span></div></li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<section class="short" aria-label="The short version">
+  <div class="wrap">
+    <p class="intro">The short version. Results from my class projects, simulations and work at UH.</p>
+    <a class="stat" href="#ch6"><b>−13% → +16%</b><span>ROI turnaround in a supply chain simulation (class project)</span></a>
+    <a class="stat" href="#ch4"><b>$2.83M</b><span>simulated net income in an SAP ERP class simulation</span></a>
+    <a class="stat" href="#ch3"><b>~$700K</b><span>projected annual savings in a routing case project</span></a>
+    <a class="stat" href="#ch5"><b>350+</b><span>students supported as an Instructional Assistant</span></a>
+  </div>
+</section>
+
+
+<section class="helper" id="hiring" data-stage="1">
+  <div class="wrap">
+    <div>
+      <h2>What role are you hiring for?</h2>
+      <p class="quiet" style="margin-top:4px">Pick one and I’ll point you to the three chapters worth reading first.</p>
+    </div>
+    <div class="roles" role="group" aria-label="Role">
+      <button class="chip" type="button" data-role="proc" aria-pressed="true">Procurement / Buying</button>
+      <button class="chip" type="button" data-role="plan" aria-pressed="false">Supply or demand planning</button>
+      <button class="chip" type="button" data-role="anl" aria-pressed="false">Supply chain analyst</button>
+      <button class="chip" type="button" data-role="hc" aria-pressed="false">Healthcare operations</button>
+    </div>
+    <ol class="picks" id="picks" aria-live="polite"></ol>
+  </div>
+</section>
+
+
+<main class="route" id="story">
+  <div class="wrap">
+    <div class="rail" aria-hidden="true"><i id="progress"></i></div>
+
+    <article class="stop" id="ch1" data-stage="2">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Chapter 01</span><span>2020</span><span>Hyderabad, India</span></div>
+      <h2>The year the shelves <em>went empty.</em></h2>
+      <div class="body">
+        <div class="story">
+          <p>I was studying Digital Marketing &amp; E-Commerce when COVID-19 hit. Hospitals ran short of masks and gloves. Factories shut down and parts stopped arriving. A shortage of semiconductors held up cars and laptops on the other side of the world.</p>
+          <p class="deep">Every empty shelf had a long chain of decisions behind it: who supplied what, how much was kept in stock, which ship got which container. I wanted to understand that chain, and I wanted to be one of the people who could make it work better.</p>
+        </div>
+        <p class="pull">Marketing asked what people wanted. Supply chain asked how it would actually reach them. I found the second question more interesting.</p>
+      </div>
+    </article>
+
+    <article class="stop alt" id="ch2" data-stage="2">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Chapter 02</span><span>May 2023 – May 2024</span><span>Hyderabad, India</span><span class="status">Internship</span></div>
+      <h2>Four districts, forty dealers, and <em>a change of plans.</em></h2>
+      <div class="body">
+        <div class="story">
+          <p>My internship at Nichino India was on paper a sales and marketing role. In practice it was my first look at a distribution network. I coordinated dealers and regional promotions for the TYCHI crop protection line across four districts, and ran product demonstrations for farmers and dealers.</p>
+          <p class="deep">The useful part was what came back. Dealers gave me feedback on pricing, and I carried it back to the sales team. It showed me how much a product's success depends on what happens between the factory and the field.</p>
+          <p>Then I took a supply chain course at Woxsen University and the plan changed. I finished my BBA in May 2024 and applied to study supply chain full time.</p>
+        </div>
+        <div class="receipt" aria-label="Internship numbers">
+          <div class="label"><span>Nichino India</span><span>Summer 2023</span></div>
+          <div class="row">Districts in the dealer network <b>4</b></div>
+          <div class="row">Farmers reached in demos <b>100+</b></div>
+          <div class="row">Dealers engaged <b>40</b></div>
+          <div class="row">Lift in product awareness <b class="up">+15%</b></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="stop" id="ch3" data-stage="3">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Chapter 03</span><span>Jan – May 2025</span><span>Houston, TX · Gulf of Mexico</span><span class="status">Completed</span></div>
+      <h2>Seven routes, two vessels, and <em>one better network.</em></h2>
+      <div class="body">
+        <div class="story">
+          <p class="project-name"><b>Offshore Routing Optimization</b> · Coastal logistics case project</p>
+          <p>I landed in Houston in January 2025 and started the M.S. in Supply Chain Management at the C.T. Bauer College of Business. Houston runs on energy, so my first big project fit the city: three Gulf energy operators spending <strong>$1.39M a year</strong> moving supplies to offshore platforms.</p>
+          <p class="deep">The question was whether the same platforms could be served with fewer, fuller trips. Using the Clarke–Wright Savings Algorithm, we merged stops that made sense together and rebuilt the network. Seven routes became five, served by two vessels.</p>
+          <div class="tags deep"><span class="tag">Clarke–Wright Savings</span><span class="tag">Route consolidation</span><span class="tag">Cost analysis</span><span class="tag">Excel</span></div>
+        </div>
+        <div class="receipt" aria-label="Routing results">
+          <div class="label"><span>Network redesign</span><span>Before → after</span></div>
+          <div class="lanes" aria-hidden="true">
+            <div class="lane"><span>Before</span><div class="dots"><s></s><s></s><s></s><s></s><s></s><s></s><s></s></div></div>
+            <div class="lane after"><span>After</span><div class="dots"><s></s><s></s><s></s><s></s><s></s></div></div>
+          </div>
+          <div class="row" style="margin-top:8px">Routes <b>7 → 5</b></div>
+          <div class="row">Weekly operating cost <b class="up">−20.5%</b></div>
+          <div class="row" style="display:block">
+            <div style="display:flex;justify-content:space-between;align-items:baseline">Vessel utilization <b>86.4%</b></div>
+            <div class="util" aria-hidden="true"><i></i></div>
+          </div>
+          <div class="row">Projected annual savings <b class="up">~$700K</b></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="stop alt" id="ch4" data-stage="3">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Chapter 04</span><span>Aug – Dec 2025</span><span>UH Bauer · SAP S/4HANA</span><span class="status">Completed</span></div>
+      <h2>Running a muesli company <em>from inside SAP.</em></h2>
+      <div class="body">
+        <div class="story">
+          <p class="project-name"><b>SAP S/4HANA ERP Simulation</b> · Analytics &amp; Enterprise Operations</p>
+          <p>That fall our team ran a simulated cereal manufacturer end to end in SAP S/4HANA. Every decision went through the system the way it would at a real company.</p>
+          <p class="deep">I worked the procure-to-pay cycle: purchase orders, goods receipt, invoice matching, and keeping vendor, material and bill-of-materials data clean. I ran demand planning and MRP so production had the right ingredients at the right time without stockpiling. We tracked margins, return on assets and working capital in Power BI scorecards and used them to adjust pricing and product mix.</p>
+          <div class="tags deep"><span class="tag">Procure-to-pay</span><span class="tag">MRP</span><span class="tag">Demand planning</span><span class="tag">BOM &amp; master data</span><span class="tag">Power BI</span></div>
+        </div>
+        <div class="receipt" aria-label="SAP simulation results">
+          <div class="label"><span>Final close</span><span>Simulated firm</span></div>
+          <div class="row">Revenue <b>$9.46M</b></div>
+          <div class="row">Net income <b>$2.83M</b></div>
+          <div class="row">Inventory efficiency <b class="up">+10–15%</b></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="stop" id="ch5" data-stage="3">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Chapter 05</span><span>Aug 2025 – present</span><span>UH Bauer · Decision &amp; Information Sciences</span><span class="status live">Current</span></div>
+      <h2>Teaching the models <em>I was learning to build.</em></h2>
+      <div class="body">
+        <div class="story">
+          <p>That same August I became an Instructional Assistant. Three semesters of Business Modeling &amp; Decision Analysis later, and now in Supply Chain Analytics, I have helped more than <strong>350 students</strong> build and fix their models.</p>
+          <p class="deep">Most of the job is detective work. A student's Solver model returns something strange, and we trace it back to a missing constraint or a wrong assumption. Then comes the part I enjoy most: explaining what the answer means for the business, in plain words.</p>
+          <p class="pull deep" style="font-size:1.3rem">If I can't explain why the model picked an answer, I don't really understand the model yet.</p>
+          <div class="courses">
+            <div class="course"><b>Business Modeling &amp; Decision Analysis</b><span>3 semesters</span></div>
+            <div class="course"><b>Supply Chain Analytics</b><span>Current</span></div>
+            <div class="course"><b>Students supported</b><span>350+</span></div>
+          </div>
+        </div>
+        <div class="toolkit deep">
+          <div class="tool"><b>Optimization</b><span>Excel Solver, linear programming, integer and binary models, sensitivity analysis</span></div>
+          <div class="tool"><b>Risk &amp; forecasting</b><span>@RISK, StatTools, risk modeling, forecasting</span></div>
+          <div class="tool"><b>Machine learning</b><span>Supervised and unsupervised learning in JASP</span></div>
+          <div class="tool"><b>In the room</b><span>Model troubleshooting, grading, and explaining results in plain business terms</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="stop alt" id="ch6" data-stage="3">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Chapter 06</span><span>Jan – May 2026</span><span>Strategic Supply Management</span><span class="status">Verified certificate</span></div>
+      <h2>Six rounds of supplier decisions, <em>and a company back in the black.</em></h2>
+      <div class="body">
+        <div class="story">
+          <p class="project-name"><b>The Fresh Connection</b> · Strategic sourcing &amp; supplier management</p>
+          <p>We took over a juice company that was losing money. My job was the supply side. Each round I compared suppliers on quoted unit price, lead time and reject rate. The cheapest quote often turned out to be the expensive one once rejected components were counted, so I paid for supplier quality upgrades that cut those rejection costs across the product line.</p>
+          <p class="deep">On the operations side, we split one undifferentiated supply chain into four customer channels and sped up production with SMED changeovers, faster line speeds and preventive maintenance.</p>
+          <div class="tags deep"><span class="tag">Supplier selection</span><span class="tag">Total cost of quality</span><span class="tag">Segmentation</span><span class="tag">SMED</span><span class="tag">Preventive maintenance</span></div>
+          <a class="cta-link" href="docs/Fresh_Connection_Certificate.pdf" target="_blank" rel="noopener">View certificate ↗</a>
+        </div>
+        <div class="receipt" aria-label="Fresh Connection results">
+          <div class="label"><span>Round 1 → Round 6</span><span>Simulated</span></div>
+          <div class="roi" role="img" aria-label="ROI rose from minus 13.3 percent to plus 16.2 percent">
+            <svg viewBox="0 0 300 120">
+              <line x1="0" y1="64" x2="300" y2="64" stroke="var(--line)" stroke-width="1"/>
+              <text x="4" y="60">0%</text>
+              <rect x="70" y="64" width="54" height="33" rx="3" fill="var(--muted)" opacity=".45"/>
+              <rect x="176" y="24" width="54" height="40" rx="3" fill="var(--teal)"/>
+              <text x="97" y="112" text-anchor="middle">−13.3%</text>
+              <text x="203" y="17" text-anchor="middle">+16.2%</text>
+              <text x="97" y="58" text-anchor="middle">Start</text>
+              <text x="203" y="78" text-anchor="middle">Finish</text>
+            </svg>
+          </div>
+          <div class="row">Revenue <b>€2.93M → €5.84M</b></div>
+          <div class="row">ROI <b class="up">−13.3% → +16.2%</b></div>
+          <div class="row">Customer channels <b>1 → 4</b></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="stop" id="ch7" data-stage="3">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Chapter 07</span><span>Jun – Jul 2026</span><span>UH Humana Integrated Health Sciences Institute</span><span class="status">Presented</span></div>
+      <h2>Back to where it started: <em>the medicine cabinet.</em></h2>
+      <div class="body">
+        <div class="story">
+          <p class="project-name"><b>Value-Based Healthcare Analyst</b> · SHERP 2026</p>
+          <p>The shortages that pulled me into supply chain started in healthcare, so this project felt like coming full circle. Patients were getting duplicate prescriptions and falling into refill gaps, which costs health plans money and puts people at risk.</p>
+          <p class="deep">I cleaned, merged and validated more than 7,000 pre- and post-survey records in SQL, then built the financial model for a 100,000-member population. We worked with physicians and pharmacists on a medication safety solution and presented it as an interdisciplinary team.</p>
+          <div class="receipt" aria-label="Healthcare results" style="margin-top:6px">
+            <div class="label"><span>Population model</span><span>100,000 members</span></div>
+            <div class="row">Survey records validated <b>7,000+</b></div>
+            <div class="row">Estimated net value <b class="up">$8 PMPM</b></div>
+            <div class="row">Estimated annual plan savings <b class="up">$9.6M</b></div>
+          </div>
+        </div>
+        <figure>
+          <div class="photo wide-photo"><img src="img/sherp-team.jpg" alt="Vishwak with the SHERP 2026 team beside their value-based healthcare poster"></div>
+          <figcaption>The SHERP 2026 team with our medication safety poster.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="stop alt" id="ch8" data-stage="3">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Chapter 08</span><span>2026</span><span>St. Louis, MO · CFHA Annual Conference</span><span class="status">Poster presented</span></div>
+      <h2>From survey data <em>to a conference floor.</em></h2>
+      <div class="body">
+        <div class="story">
+          <p class="project-name"><b>Research poster</b> · Collaborative Family Healthcare Association (CFHA) 2026</p>
+          <p>Our research on value-based care education went to the 2026 CFHA Annual Conference in St. Louis, and I presented the poster with the team. It was titled <strong>“Evaluating the Impact of a Specialized Value-Based Care Course on Self-Reported Knowledge and Attitudinal Change Toward VBC.”</strong></p>
+          <p class="deep">The study looked at how structured value-based care education can build understanding of VBC and readiness for it across healthcare stakeholders. At the poster I talked through the findings with clinicians, researchers and healthcare leaders. Those conversations covered integrated care, the hard parts of implementation, and where healthcare delivery is heading.</p>
+          <p class="deep">Coming from supply chain and operations, I left with a sharper interest in where healthcare operations, analytics and patient-centered care meet.</p>
+          <p class="quiet deep">With Dr. Dave Curtis, Dr. Sara Elkins, Dr. Ken Janda and the team at the Humana Institute, Tilman J. Fertitta Family College of Medicine, University of Houston.</p>
+          <div class="tags deep"><span class="tag">Value-based care</span><span class="tag">Pre/post survey analysis</span><span class="tag">Healthcare operations</span><span class="tag">Research communication</span></div>
+        </div>
+        <div class="cfha-pics">
+          <figure><div class="photo" style="aspect-ratio:4/3"><img src="img/cfha-team.jpg" alt="Vishwak with Dr. Dave Curtis, Dr. Sara Elkins and a teammate in front of their Humana Institute poster at CFHA 2026"></div></figure>
+          <figure><div class="photo" style="aspect-ratio:3/4"><img src="img/cfha-presenting.jpg" alt="Vishwak explaining the poster findings to two conference attendees"></div></figure>
+          <figcaption style="grid-column:1/-1">At the poster in St. Louis, with the team and walking attendees through the findings.</figcaption>
+        </div>
+      </div>
+    </article>
+
+    <article class="stop" id="side" data-stage="3">
+      <span class="pin" aria-hidden="true"></span>
+      <div class="meta mono"><span class="ch">Side trips</span><span>Along the way</span></div>
+      <h2>Things I built and <em>rooms I showed up in.</em></h2>
+      <div class="trips">
+        <figure class="trip">
+          <div class="photo"><img src="img/coogs.jpg" alt="Vishwak behind the EnerCoogs '26 physical model of a circular supply chain"></div>
+          <h3>Coogs for Energy Hackathon</h3>
+          <p>Our team built a physical model of a circular supply chain for EnerCoogs '26: how materials get recovered and reused, how much waste it cuts, and whether the numbers work at scale.</p>
+        </figure>
+        <figure class="trip">
+          <div class="photo"><img src="img/nbmbaa.jpg" alt="Vishwak at the National Black MBA Association conference in Los Angeles in front of the Pivot backdrop"></div>
+          <h3>National Black MBA Association Conference</h3>
+          <p>Los Angeles. The theme that year was <em>Pivot</em>, which felt right for someone who switched from marketing to supply chain. I spent it at the career expo talking with employers across industries.</p>
+        </figure>
+      </div>
+    </article>
+  </div>
+</main>
+
+<section class="block" id="skills" data-stage="4">
+  <div class="wrap">
+    <div class="label" style="color:var(--muted)">What I can do</div>
+    <h2>Four things I’m good at, and where to see them.</h2>
+    <div class="cando">
+      <a class="can" href="#ch6"><b>Choosing and managing suppliers</b><p>Comparing suppliers on price, quality and delivery, and knowing when the cheapest option ends up costing more.</p><span>See it: The Fresh Connection simulation →</span></a>
+      <a class="can" href="#ch4"><b>Planning and buying in SAP</b><p>Purchase orders, invoices, and planning what to buy and when, so production never runs short.</p><span>See it: SAP simulation, $2.83M simulated profit →</span></a>
+      <a class="can" href="#ch3"><b>Finding savings in the numbers</b><p>Building Excel models that show where money is being wasted and what to change.</p><span>See it: Routing case project, ~$700K projected savings →</span></a>
+      <a class="can" href="#ch5"><b>Explaining it so people get it</b><p>Taking a complicated model and explaining it in plain words, to students, teams and conference audiences.</p><span>See it: 350+ students supported →</span></a>
+    </div>
+    <p class="note">Tools I use: SAP S/4HANA, Excel and Solver, Power BI, Tableau, SQL, Python, R, JASP, @RISK.</p>
+  </div>
+</section>
+
+<section class="block" id="paperwork" data-stage="4">
+  <div class="wrap">
+    <div class="label" style="color:var(--muted)">Certificates</div>
+    <h2>Certificates.</h2>
+    <div class="docs">
+      <a class="doc" href="docs/Six_Sigma_White_Belt.pdf" target="_blank" rel="noopener"><img src="img/cert-sixsigma.jpg" alt="Six Sigma White Belt certificate"><div><b>Six Sigma White Belt</b><span>CSSC · Feb 2026</span><em>View certificate ↗</em></div></a>
+      <a class="doc" href="docs/Fresh_Connection_Certificate.pdf" target="_blank" rel="noopener"><img src="img/cert-tfc.jpg" alt="The Fresh Connection verified participation certificate"><div><b>The Fresh Connection</b><span>Verified participation · Apr 2026</span><em>View certificate ↗</em></div></a>
+      <a class="doc" href="docs/DataCamp_Intro_to_R.pdf" target="_blank" rel="noopener"><img src="img/cert-r.jpg" alt="DataCamp Introduction to R certificate"><div><b>Introduction to R</b><span>DataCamp · Sep 2025</span><em>View certificate ↗</em></div></a>
+      <a class="doc" href="docs/DataCamp_ggplot2.pdf" target="_blank" rel="noopener"><img src="img/cert-ggplot.jpg" alt="DataCamp Data Visualization with ggplot2 certificate"><div><b>Data Visualization with ggplot2</b><span>DataCamp · Oct 2025</span><em>View certificate ↗</em></div></a>
+    </div>
+    <p class="note">Also completed: Business Strategy, University of Virginia. Graduate GPA 3.70.</p>
+  </div>
+</section>
+
+<section class="block" id="game" data-stage="4">
+  <div class="wrap">
+    <div class="label" style="color:var(--muted)">Your turn · a short game</div>
+    <h2>Pick the supplier. Cheapest isn’t always cheapest.</h2>
+    <p class="lede">Three suppliers offer the same part. Some are cheap but send more broken parts or take longer to deliver. Pick the one that really costs least, then see why.</p>
+    <div class="panel" style="margin-top:24px">
+      <div class="scenario"><b id="rTag">Round 1 of 3</b><span class="mono" id="rScore" style="color:var(--muted)">Money saved: $0 of $0</span></div>
+      <h3 id="rTitle" style="font-size:1.2rem;margin-top:8px"></h3>
+      <p id="rDesc" class="quiet" style="margin-top:6px"></p>
+      <div id="rRule" class="rule"></div>
+      <div class="quotes" id="quotes"></div>
+      <div class="verdict" id="rVerdict" hidden></div>
+      <div class="g-actions"><button class="btn btn-primary" id="rNext" type="button" hidden>Next round</button><button class="btn btn-line" id="rReset" type="button">Start over</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="epi" id="next" data-stage="5">
+  <div class="wrap">
+    <div>
+      <div class="label">Let’s talk · Available January 2027</div>
+      <h2>Next chapter: your team.</h2>
+      <p>I graduate in December 2026 and I’m available for a full-time role from <strong>January 2027</strong>. My first choice is <strong>Procurement or Strategic Sourcing</strong>, with Planning and Supply Chain Analytics close behind. What I enjoy most:</p>
+      <div class="likes"><span>Solving problems with data</span><span>Negotiating with suppliers</span><span>Finding cost savings</span><span>Building models</span><span>Improving processes</span><span>Working with people</span></div>
+      <p>Reach out, say hello, or ask me about anything on this page.</p>
+      <div class="contact">
+        <div class="email"><code id="em">puttavishwakreddy@gmail.com</code><button class="btn btn-ghost" id="copy" type="button">Copy email</button></div>
+        <div class="actions" style="margin-top:4px">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/vishwak-putta" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+    <figure class="coffee">
+      <img src="img/coffee.jpg" alt="An espresso at an outdoor cafe table on a city street">
+      <figcaption>Off the clock I travel, and every new city starts the same way: finding a good coffee shop.</figcaption>
+    </figure>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 Vishwak Putta · Houston, TX</span><a href="https://www.linkedin.com/in/vishwak-putta" target="_blank" rel="noopener">LinkedIn ↗</a></div></footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root=document.documentElement;
+  function $(id){return document.getElementById(id);}
+
+  /* theme */
+  try{var t=localStorage.getItem('vp-theme');if(t)root.setAttribute('data-theme',t);}catch(e){}
+  $('theme').addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);
+    try{localStorage.setItem('vp-theme',next);}catch(e){}
+  });
+
+
+  /* stage tracker */
+  var secs=[].slice.call(document.querySelectorAll('[data-stage]'));
+  var links=[].slice.call(document.querySelectorAll('#stages a'));
+  var names=['Intro','How it started','What I’ve done','What I can do','Let’s talk'];
+  var bar=$('progress'),route=$('story'),last=0;
+  function update(){
+    var y=window.innerHeight*0.4,st=1;
+    secs.forEach(function(s){if(s.offsetParent!==null&&s.getBoundingClientRect().top<y)st=+s.dataset.stage;});
+    if((window.innerHeight+window.scrollY)>=document.documentElement.scrollHeight-4)st=5;
+    if(st!==last){last=st;
+      links.forEach(function(a){var n=+a.dataset.s;a.classList.toggle('done',n<st);a.classList.toggle('on',n===st);if(n===st)a.setAttribute('aria-current','step');else a.removeAttribute('aria-current');});
+      $('trkCode').textContent='0'+st+' of 05';$('trkTitle').textContent=names[st-1];
+    }
+    var r=route.getBoundingClientRect();bar.style.height=(Math.min(1,Math.max(0,(window.innerHeight*0.6-r.top)/r.height))*100).toFixed(1)+'%';
+  }
+  addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();
+
+  /* role picker */
+  var PICKS={
+    proc:[['ch6','The Fresh Connection','Class simulation · chose suppliers on price, quality and delivery'],['ch4','SAP S/4HANA simulation','Class simulation · ran purchasing end to end'],['ch3','Offshore routing','Case project · ~$700K projected yearly savings']],
+    plan:[['ch4','SAP S/4HANA simulation','Class simulation · demand planning and MRP'],['ch6','The Fresh Connection','Class simulation · six rounds of supply decisions'],['ch3','Offshore routing','Case project · fewer routes, 20.5% lower cost']],
+    anl:[['ch3','Offshore routing','Case project · ~$700K projected yearly savings'],['ch5','Instructional Assistant','Helping 350+ students build and fix models'],['ch7','Value-based healthcare','Cleaned 7,000+ records, built a $9.6M savings model']],
+    hc:[['ch7','Value-based healthcare','Medication safety and a $9.6M savings model'],['ch8','CFHA 2026 poster','Presented our research in St. Louis'],['ch5','Instructional Assistant','Explaining analysis to 350+ students']]
+  };
+  function showRole(k){
+    document.querySelectorAll('[data-role]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.role===k?'true':'false');});
+    $('picks').innerHTML=PICKS[k].map(function(p,i){return '<li><a href="#'+p[0]+'"><i>'+(i+1)+'</i><b>'+p[1]+'</b><span>'+p[2]+'</span></a></li>';}).join('');
+  }
+  document.querySelectorAll('[data-role]').forEach(function(b){b.addEventListener('click',function(){showRole(b.dataset.role);});});
+  showRole('proc');
+
+  /* sourcing game: total cost of ownership */
+  var ROUNDS=[
+    {t:'A plastic part for a kitchen blender',d:'An everyday part. Broken parts are a nuisance, and waiting costs a little.',rej:6,lt:.025},
+    {t:'A sensor for a medical device',d:'A broken part here stops the whole production line, and waiting is expensive.',rej:15,lt:.05},
+    {t:'Plain cardboard boxes',d:'A simple part. Broken boxes are cheap to replace and waiting barely matters.',rej:1,lt:.01}
+  ];
+  var S=[{n:'Supplier A',p:4.80,r:.08,l:14},{n:'Supplier B',p:5.10,r:.02,l:10},{n:'Supplier C',p:5.40,r:.005,l:5}];
+  var VOL=50000,ri=0,saved=0,possible=0;
+  function tco(s,rd){return s.p+s.r*rd.rej+s.l*rd.lt;}
+  function f(x){return '$'+x.toFixed(2);}
+  function k(x){return '$'+Math.round(x).toLocaleString('en-US');}
+  function drawRound(){
+    var rd=ROUNDS[ri];$('rTag').textContent='Round '+(ri+1)+' of 3';$('rTitle').textContent=rd.t;$('rDesc').textContent=rd.d+' You need 50,000 units.';
+    $('rRule').innerHTML='<div><span>Each broken part costs you</span><b>$'+rd.rej.toFixed(2)+'</b></div><div><span>Each day of waiting costs you, per part</span><b>$'+rd.lt.toFixed(3).replace(/0$/,'')+'</b></div><p>Real cost per part = price + (broken % × $'+rd.rej+') + (lead time days × $'+rd.lt.toFixed(3).replace(/0$/,'')+')</p>';
+    $('rVerdict').hidden=true;$('rNext').hidden=true;
+    $('quotes').innerHTML=S.map(function(s,i){return '<button class="quote" type="button" data-i="'+i+'"><h3>'+s.n+'</h3><dl><dt>Quoted price</dt><dd>'+f(s.p)+'</dd><dt>Broken parts</dt><dd>'+(s.r*100).toFixed(1)+'%</dd><dt>Lead time</dt><dd>'+s.l+' days</dd></dl><div class="tco" hidden></div></button>';}).join('');
+    document.querySelectorAll('.quote').forEach(function(b){b.addEventListener('click',function(){pick(+b.dataset.i);});});
+  }
+  function pick(i){
+    var rd=ROUNDS[ri],costs=S.map(function(s){return tco(s,rd);}),best=costs.indexOf(Math.min.apply(null,costs)),worst=Math.max.apply(null,costs);
+    document.querySelectorAll('.quote').forEach(function(b,j){
+      b.disabled=true;var s=S[j],el=b.querySelector('.tco');el.hidden=false;
+      el.innerHTML='Price '+f(s.p)+' + broken parts '+f(s.r*rd.rej)+' + waiting '+f(s.l*rd.lt)+'<br>Real cost per part <b>'+f(costs[j])+'</b>';
+      if(j===best)b.classList.add('best');if(j===i)b.classList.add('picked');
+    });
+    var gain=(worst-costs[i])*VOL,max=(worst-costs[best])*VOL;saved+=gain;possible+=max;
+    $('rScore').textContent='Money saved: '+k(saved)+' of '+k(possible);
+    var v=$('rVerdict');v.hidden=false;
+    v.innerHTML=(i===best?'<b>Right call.</b> ':'<b>'+S[best].n+' was the better buy.</b> ')+S[best].n+' really costs least, at '+f(costs[best])+' per part. '+(ri===0?'The cheapest price lost because broken parts and slow delivery added up.':ri===1?'When a broken part stops production, quality and speed are worth paying for.':'For simple boxes, the cheapest price really is the best buy. It depends on the part.');
+    if(ri<2)$('rNext').hidden=false;
+    else v.innerHTML+=' <br><br><b>Event closed.</b> You captured '+k(saved)+' of a possible '+k(possible)+' in possible savings. I made this same kind of call every round in The Fresh Connection.';
+  }
+  $('rNext').addEventListener('click',function(){ri++;drawRound();});
+  $('rReset').addEventListener('click',function(){ri=0;saved=0;possible=0;$('rScore').textContent='Money saved: $0 of $0';drawRound();});
+  drawRound();
+
+  /* copy email */
+  var cb=$('copy'),em=$('em');
+  cb.addEventListener('click',function(){
+    function sel(){var r=document.createRange();r.selectNodeContents(em);var s=getSelection();s.removeAllRanges();s.addRange(r);cb.textContent='Selected';}
+    try{navigator.clipboard.writeText(em.textContent).then(function(){cb.textContent='Copied';setTimeout(function(){cb.textContent='Copy email'},1800)},sel);}catch(e){sel();}
+  });
+})();
+</script>
+
+</body>
+</html>
